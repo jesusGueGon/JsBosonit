@@ -3,12 +3,8 @@ function returnFalsyValues(object, type)
 
     let newObj = {};
 
-    console.log(type);
-
-
     for(let [key, value] of Object.entries(object))
     {
-        console.log(typeof value)
         if(!type(value))
         {
             newObj[key] = value;
