@@ -1,11 +1,12 @@
 function roundTo(num, decimales)
 {
 
-    let exp = Math.pow(10, decimales);
-    let redondeo = parseInt(num * exp, 32) / exp;
+   var s = num.toString()
+   var l = s.length
+   var decimalLength = s.indexOf('.') + 1
+   var numStr = s.substr(0, decimalLength + decimales)
+   return Number(numStr)
 
-    console.log(redondeo);
-    return redondeo;
 }
 
 //const roundedResult = roundTo(2.123, 2);
