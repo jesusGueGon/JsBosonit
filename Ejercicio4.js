@@ -6,7 +6,8 @@ function interseccion()
 
     let interseccion = arrNumber2.filter(e =>
         arrNumber1.length > 0 ? arrNumber1.includes(e) : true &&
-        arrNumber3.length > 0 ? arrNumber3.includes(e) : true);
+        arrNumber3.length > 0 ? arrNumber3.includes(e) : true
+    );
 
     console.log(interseccion);
 
