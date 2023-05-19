@@ -1,3 +1,33 @@
+// function noCapitales()
+// {
+//     const arrCities = [
+//         {city: 'Logroño', country: 'Spain', capital: false},
+//         {city: 'Paris', country: 'France', capital: true},
+//         {city: 'Madrid', country: 'Spain', capital: true},
+//         {city: 'Rome', country: 'Italy', capital: true},
+//         {city: 'Oslo', country: 'Norway', capital: true},
+//         {city: 'Jaén', country: 'Spain', capital: false}
+//     ];
+
+//     let newArr = [];
+
+//     for(let i = 0; i < arrCities.length; i++)
+//     {
+
+//         if((arrCities[i].country == 'Spain') && (arrCities[i].capital == false))
+//         {
+//             newArr.push(arrCities[i]);
+//         }
+
+//     }
+
+//     console.log(newArr);
+
+//     return newArr;
+
+// }
+
+// Otra solucion
 function noCapitales()
 {
     const arrCities = [
@@ -9,17 +39,7 @@ function noCapitales()
         {city: 'Jaén', country: 'Spain', capital: false}
     ];
 
-    let newArr = [];
-
-    for(let i = 0; i < arrCities.length; i++)
-    {
-
-        if((arrCities[i].country == 'Spain') && (arrCities[i].capital == false))
-        {
-            newArr.push(arrCities[i]);
-        }
-
-    }
+    let newArr = arrCities.filter(city => city.country === 'Spain' && city.capital === false);
 
     console.log(newArr);
 
